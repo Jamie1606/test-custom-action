@@ -1,3 +1,5 @@
 #!/bin/sh
 
-python /app/server.py
+NAME="${INPUT_NAME}"
+
+python /app/server.py "$NAME"
