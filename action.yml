@@ -2,6 +2,11 @@ name: "Test Custom Action"
 description: "A custom GitHub action that prints hello"
 author: "Test"
 
+inputs:
+  name: 
+    description: 'Provide the name to be added after hello'
+    required: true
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
