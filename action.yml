@@ -1,0 +1,7 @@
+name: "Test Custom Action"
+description: "A custom GitHub action that prints hello"
+author: "Test"
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
