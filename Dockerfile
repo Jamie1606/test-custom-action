@@ -4,4 +4,6 @@ WORKDIR /app
 
 COPY . /app
 
-CMD ["python", "server.py"]
+RUN chmod +x /app/entrypoint.sh
+
+ENTRYPOINT ["/app/entrypoint.sh"]
